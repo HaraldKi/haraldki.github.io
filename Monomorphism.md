@@ -15,11 +15,12 @@ Now lets have another set, $Z$, and two functions $g_1, g_2: Z\to X$
 such that $f\circ g_1 = f\circ g_2$ which means in particular that
 $$f(g_1(z)) = f(g_2(z))$$ for all $z\in Z$. Therefore we get
 
-\begin{align*}
+
+$$\begin{align*}
     g_1(z) &= h(f(g_1(z)))\\
     &= h(f(g_2(z))) \\
     &= g_2(z)\;.
-\end{align*}
+\end{align*}$$
 
 This means that $g_1=g_2$, and hence that $f$ is a monomorphism.
 
