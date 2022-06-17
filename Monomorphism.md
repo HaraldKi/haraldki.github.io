@@ -1,6 +1,7 @@
 In Category Theory a *monomorphism* is a morphism $f:X\to Y$ for which
-the following condition holds: For any two morphisms $g_1, g_2: Z\to
-X$ the identity $f\circ g_1 = g\circ g_2$ induces $g_1 = g_2$.
+the following condition holds: For any two morphisms 
+$g_1, g_2: Z\to X$
+the identity $f\circ g_1 = g\circ g_2$ induces $g_1 = g_2$.
 
 **Monomorphisms are the categorial way to describe an injective
 function.** It is a bit more general, but for functions on sets, an
