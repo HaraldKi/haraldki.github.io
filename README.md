@@ -6,6 +6,8 @@
 <style>XXmjx-container {background: #faf3f3; margin: auto;}</style>
 # Harald's Blog
 
+[Start](blog/index.html)
+
 Try MathJax: \\(e^{\pi}-1=0\in\mathbb{R}\\).
 
 $$\sum_{i=0}^\infty \frac{1}{n}\pi = \infty$$
@@ -13,4 +15,5 @@ $$\sum_{i=0}^\infty \frac{1}{n}\pi = \infty$$
 * [test](test.html)
 * [Monomorphism](Monomorphism.md)
 ___
-[Site Home](https://haraldki.github.io/)
+[Start](blog/index.html)
+[Site Home](https://haraldki.github.io/blog/index.html)
