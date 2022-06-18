@@ -10,5 +10,7 @@ Try MathJax: \\(e^{\pi}-1=0\in\mathbb{R}\\).
 
 $$\sum_{i=0}^\infty \frac{1}{n}\pi = \infty$$
 
-[test](test.html)
-[Monomorphism](Monomorphism.md)
+* [test](test.html)
+* [Monomorphism](Monomorphism.md)
+___
+[Site Home](https://haraldki.github.io/)
