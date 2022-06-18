@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <wrap src="./templates/page.html">
+  <wrap src="./templates/article.html">
+    <div class="date">2017-11-11</div>
+    <h1 class="title">An Explanation of Time</h1>
+
+    <div style="display:none;">$
+      \def\Vec#1{\mathbf{#1}}
+      \def\vt#1{\Vec{v}_{#1}(t)}
+      \def\v#1{\Vec{v}_{#1}}
+      \def\vx#1{\Vec{x}_{#1}}
+      \def\av{\bar{\Vec{v}}}
+      \def\vdel{\Vec{\Delta}}
+      $
+    </div>
+
+
+    <h2 id="film">Watching a Movie</h2>
+    <p>Movies are comprised of a sequence of pictures. Showing pictures in
+    quick succession creates the impression of a continuous sequence
+    of events taking place. Slow motion reduces the frequency of
+    pictures. Down to a certain limit motion still looks smooth,
+    but then we start noticing that there are individual pictures
+    shown. Yet for the following argument this is not important. The
+    point is that we can slow down the frame rate ever more,
+    even down to zero. At this point a last picture is shown,
+    frozen on the screen. The next picture of course still exists, but
+    will not be shown.
+    </p>
+
+    <p>What is the time coordinate in the film. It is discrete and
+    given by the sequence numbers of the pictures.  The
+    sequence of pictures defines the sequence of events taking
+    place. When it comes to the last frame shown, where we decided to
+    stop the film, local time in the film does not proceed anymore,
+    simply because time is equivalent to frames shown and the next
+    frame is never shown.</p>
+
+    <p>For observers in the movie theater it is irrelevant that
+    there are potentially more pictures to show. There was a last
+    frame and that was that. More will not
+    happen.</p>
+
+    <h2 id="phyicstime">Time in Physics</h2>
+    <p>The movie with its slow motion and arbitrary stop can help to
+    understand time in physics. The bold transfer from the discrete time co-ordinate of the film to continuous time in physics works as follows:</p>
+    <ol>
+      <li>Time is a sequence of events, a sequence of things
+      happening.</li>
+      <li>If events follow each other slower, time runs slower.</li>
+      <li>If no more events follow, if things stop happening, time
+      does not proceed.</li>
+    </ol>
+
+    <p>The following paragraphs try to explain why this can be a viable way of looking at time in physics.</p>
+
+    <p>Time in physics, as far as we know, is
+    continuous, not discrete. But there are many  examples in
+    mathematics and physics where the limit of discrete points
+    results in a continuum. In the same way we can imagine that points in
+    time is are individual events, yet they comprise a continuum.</p>
+
+    <p>In this view, time is implicitly given by a continuous sequence of
+    events or states of the world. You could even say that time has
+    no existence in itself. It is "only" a measure of how
+    fast the states of the world follow each other.</p>
+
+    <p>Special and General Relativity tell us that time slows down in
+    moving objects or under high gravity. How does this translate into
+    the "continuous sequence of states of the world" view?  Easy: the
+    events follow slower onto each other than before. Similar to a
+    film in slow motion. The time between the frames is longer than
+    before.</p>
+
+    <p>Oh wait, what? Time between frames gets longer for
+    slow motion, but how does this translate into the time in physics?
+    How can there be more time between states of a
+    continuum of states if the continuum of state <em>is</em> time?</p>
+
+    <p>The answer is the same as for the movie: we are talking about
+    two time axes. In the movie, one axis is the frame number. The
+    other is the observer's time axis as given by the observer's stop
+    watch that shows a longer time between frames in slow motion. The
+    same is done in physics, where a difference is made between the
+    local time on a moving object or an object under gravity and the
+    observer's time.</p>
+
+    <p>So we have two time axes, the one of the observer and the one
+    of the object being observed. For the film it is easy to see how
+    things happen slower. What about special or general relativity?
+    What constitutes the longer time between world states,
+    what makes world states follow each other slower &mdash; at least from
+    the vantage point of the observer?
+    </p>
+
+    <p>What are individual world states anyway? This is a difficult
+    question, so we start with simplified world. Take a
+    game of chess. A state is defined by the positions of all the
+    pieces on the board. Look at the board now and look at the board
+    some time later during which the players are thinking, not moving
+    any piece. The state is the same &mdash; because <em>nothing has
+    changed</em>. The important word is "change". While it is
+    difficult to fully describe states of the world, it is easy to
+    grasp that they are different due to change.</p>
+
+    <p>How do states of the world change? Again we fall back to a
+    simple model. Consider a group of $n$ photons-in-a-mirrored-box
+    and assume that they are point particles. Each photon has the
+    (three dimensional) velocity $\Vec{v}_i$ with the absolute value
+    being the the speed of light $c=|\Vec{v}_i|$. The
+    average value of these velocities is
+
+    \begin{align}
+    \av &amp;= \frac{1}{n}\sum_{i=0}^{n-1} \Vec{v}_i .
+    \end{align}
+
+    If the box moves at the speed of light, all photons move in the
+    same direction and their $\Vec{v}_i$ are all identical. In this
+    case $\av$ is also the same and in particular $|\av|=c$. On the
+    other hand, if the box does not move we have $|\av|=0$.
+    </p>
+    
+    <p>When all the velocities are identical, does the world state of
+    this small world change? Well, the photons are moving at the speed
+    of light through space, so this constitutes a change, doesn't it?
+    The anser is "no", because this takes the world around the photons into
+    account. If you blind out the world around and only look at the
+    group of photons now and 5 minutes later, nothing has
+    changed. Their positions relative to each other are the same. Like
+    on the unchanged chess board we can say that the world state of
+    the group of photons did not change at all.</p>
+
+    <p>Put another way: the state changes only if the photon
+    velocities are not all identical. Intuitively, if one photon of a
+    billion has a slightly different direction than all the others,
+    the rate of change is smaller than when the box has stopped and
+    the photons are bouncing about in arbitrary directions
+    within the box. The more the velocities differ, the bigger
+    is the rate of change. One way to measure this totalled difference
+    of pairwise photon velocities are the averaged squared
+    differences
+
+    \begin{equation}
+    \frac{1}{n^2} \sum_{i\lt j} (\v{i}-\v{j})^2 \;,
+    \end{equation}
+
+    which is <a
+    href="https://en.wikipedia.org/wiki/Variance#Discrete_random_variable">the
+    same as the variance</a> of the set
+    of velocities.
+    </p>
+
+    <p>
+    For the following, note that a sum $\sum_{i,j=0}^{n-1}$, if
+    symmetric in $i$ and $j$, can be viewed as summing the elements
+    $(i,j)$ of a symmetric matrix. As such it can be taken apart into
+    twice the sum over the lower left triangle of the matrix plus the
+    diagnoal like $\sum_{i \lt j} \dots + \sum_{i}\cdots$. And
+    remember that $|\v{i}|^2=\v{i}\v{i}=c^2$.
+    </p>
+    <p>
+    Lets add the average velocity squared of the photons in the box and
+    proposed measure for the rate of change, the variance of the
+    velocities:
+    
+    \begin{align}
+     \av^2 + \frac{1}{n^2} \sum_{i\lt j} (\v{i}-\v{j})^2
+     &= \frac{1}{n^2}\sum_{i,j=0}^{n-1} \v{i}\v{j} 
+            &+ \frac{1}{n^2} \sum_{i \lt j} c^2-2\v{i}\v{j}+c^2\\
+     &= \frac{1}{n^2} \left(
+            \sum_{i\lt j} 2\v{i}\v{j} 
+            + \sum_{i=0}^{n-1} \v{i}^2 \right)
+            &+ \frac{1}{n^2} \sum_{i\lt j} c^2-2\v{i}\v{j}+c^2\\
+     &= \frac{1}{n^2}
+             \left( \sum_{i=0}^{n-1} c^2 + \sum_{i\lt j} 2c^2\right)\\
+     &;= c^2
+    \label{eq:start}
+    \end{align}    
+
+    There is a tradeoff between moving by average velocity, $\av^2$,
+    and changing state as measured by velocity variance, $1/n^2
+    \sum_{i\lt j} (\v{i}-\v{j})^2$, because together they always
+    add up to $c^2$. The two extreme cases are:
+    <ol>
+      <li>If all $\v{i}$ are identical, the average speed is $c$,
+       and the rate of change is zero.</li>
+      <li>If the average is zero, the rate of change is at its
+      maximum, $c^2$.</li>
+    </ol>
+</p>
+
+    <p>Lets compare this to the formula from Special Relativity
+    according to which 4 dimensional velocity through space-time is
+    equal to the speed of light $c$:
+
+    \begin{equation}
+      \left(\frac{c\,d\tau(t)}{dt} \right)^2 + \Vec{v}^2 = c^2.
+      \label{eq:v4}
+    \end{equation}
+
+    The $\tau$ denotes local time on the moving object, while $t$ is
+    the time for the observer and $\Vec{v}$ is the velocity of the
+    object with respect to the observer. For the ensemble of photons in
+    a box we have $\Vec{v}=\av$, so we can equate (\ref{eq:start}) and
+    (\ref{eq:v4}). Dropping the $\av^2=\Vec{v}^2$ we get
+
+    \begin{equation}
+    \left(\frac{c\,d\tau(t)}{dt} \right)^2
+    =
+    \frac{1}{n^2} \sum_{i\lt j} (\v{i}-\v{j})^2 
+    \end{equation}
+    </p>
+
+    <p>The left side describes how time proceeds locally on a moving
+    object, in this case the ensemble of photons. On the right we
+    have the variance of these photons' velocities as a measure of
+    their state change.
+    </p>
+
+    <p>For fun and formula simplification, we note that the square
+    root of the variance is the standard deviation $\sigma$ of an
+    ensemble, so we can also write
+
+    \begin{equation}
+    c\frac{d\tau}{dt} = \sigma(\v{0},\dots,\v{n-1})\;.
+    \end{equation}
+
+    </p>
+
+    <p>It is tempting to speculate that the ensemble of photons is a
+    good role model for the real world, by assuming that
+    <ol>
+      <li>time is (nothing but) a measure of the (rate of)
+      change in physical systems,</li>
+      <li>the rate of change is governed by all the physical processes
+      that proceed at the speed of light,</li>
+      <li>all change in a physical system can ultimately be attributed
+      to processes with a direction and proceeding at the the speed of
+      light, i.e. can meaningfully have an $\v{i}$ with $|\v{i}|=c$
+      ascribed to them.</li>
+    </ol>
+
+    </p>
+
+
+    <p>To summarize:
+    \begin{align}
+    \text{rate of state change}
+    &= 
+    \text{photon velocity's standard deviation}\\
+    &= 
+    \text{progression of local time}
+    \end{align}
+    </p>
+
+    <h2 id="questions">Open Ends</h2>
+
+    <p>For a photons-in-a-box world we have seen that the
+    progression of local time is given by how different the photon
+    velocities (i.e. their directions) are. Smaller differences in the
+    velocities intuitively mean a smaller rate of change. And this is
+    formally equal to a slower progression of local time.</p>
+
+    <p>Does this have any meaning for the real world? 
+    </p>
+    <ul>
+      <li>photon is role model for change</li>
+      <li>photon as a point particle is only half the truth, can we do the above with phtons as a wave?</li>
+      <li>max rate of change given by $c$</li>
+      <li>SR: moving reduces possibility for change</li>
+      <li>GR: gravitation reduces possibility for change</li>
+      <li><a href="https://en.wikipedia.org/wiki/Entropic_uncertainty#Entropy_versus_variance_bounds">
+        check entropy$\lt$variance bound</a>:  which, with the above remotely looks like the progresseion of time $d\tau/dt$ limits entropy (hmm, of what) </li>
+    </ul>
+
+</wrap>
+</wrap>
+<script type="text/javascript" src="./js/templater.js?head=templates/head.html"></script>
+</body>
+</html>
+
